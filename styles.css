@@ -1,0 +1,125 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+a {
+    color: #ffff00;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #ffff00;
+}
+
+.facts {
+    margin: 20px 0;
+}
+
+.facts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.facts ul li {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.facts ul li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #00ff00;
+}
+
+.blog-section {
+    margin-top: 40px;
+    border-top: 1px solid #00ff00;
+    padding-top: 20px;
+}
+
+.blog-section h2 {
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.blog-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.blog-list li {
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.blog-list li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #00ff00;
+}
+
+.status-section {
+    margin-top: 40px;
+    border-top: 1px solid #00ff00;
+    padding-top: 20px;
+}
+
+.status-line {
+    margin: 5px 0;
+    font-family: monospace;
+}
+
+.status-ok {
+    color: #00ff00;
+}
+
+.adblock-warning {
+    background-color: #330000;
+    border: 1px solid #ff0000;
+    color: #ff6666;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.adblock-warning h3 {
+    color: #ff0000;
+    margin-top: 0;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.feed-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
