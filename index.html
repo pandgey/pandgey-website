@@ -3,64 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to pandgey.site!</title>
+    <title>pandgey@terminal:~$</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to pandgey.site!</h1>
-        
-        <!-- <div class="adblock-warning" id="adblockWarning">
-            <span class="close-btn" onclick="this.parentElement.style.display='none'">×</span>
-            <h3>Adblock detected</h3>
-            <p>If website looks wrong, crappy or buggy, please disable your adblocker! This is my personal site and it has no real ads but it's script-heavy and things can break with it on.</p>
-        </div> -->
-        
-        <p>This is my little website, blog, and portfolio. It's inspired by different people's idea and website design. I also want to color the internet :D </p>
-        
-        <p>I'm a programmer? artist? tech-savvy? nerd? I code and make some random things when I feel like it. You can read more about me <a href="/about.html">here</a>!</p>
-        
-        <div class="facts">
-            <p><strong>Some quick facts:</strong></p>
-            <ul>
-                <li>I'm from Thailand. </li>
-                <li>My main programming language is Python and a little bit of C (still learning).</li>
-                <li>I love Moon and clouds.</li>
-                <li>I hate the Sun.</li>
-                <li>I spend almost all my time at home, playing instrument, fidgeting around my homeserver, 3D modeling stuff, gayming and doing random things on my puter.</li>
-                <li>I'm a student in a university in Australia.</li>
-                <!-- <li>I code websites, scrapers, bots and scripts. You can also order things from me (use <a href="mailto:contact@dimden.dev">email</a>).</li> -->
-            </ul>
+    <div class="scanlines"></div>
+    <div class="matrix-bg" id="matrix"></div>
+    
+    <div class="terminal">
+        <div class="header">
+            <div class="ascii-art">
+██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███████╗██╗   ██╗
+██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝╚██╗ ██╔╝
+██████╔╝███████║██╔██╗ ██║██║  ██║██║  ███╗█████╗   ╚████╔╝ 
+██╔═══╝ ██╔══██║██║╚██╗██║██║  ██║██║   ██║██╔══╝    ╚██╔╝  
+██║     ██║  ██║██║ ╚████║██████╔╝╚██████╔╝███████╗   ██║   
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚══════╝   ╚═╝   
+            </div>
+            <div class="prompt">
+                pandgey@terminal:~$ <span class="command">whoami</span>
+            </div>
+            <div class="output">
+                > tech enthusiast, artist, linux user (I use arch btw)
+            </div>
+            <div class="output timestamp">
+                [SESSION STARTED: <span id="current-time"></span>]
+            </div>
         </div>
-        
-        <div class="blog-section">
-            <h2>Blog <span class="feed-icon">📡</span></h2>
-            <ul class="blog-list">
-                <!-- <li><a href="/blog/?id=13-optimizing-rendering-of-100k-html-nodes">Optimizing rendering of 100,000+ HTML nodes</a> — Thursday, April 4th, 2024</li>
-                <li><a href="/blog/?id=12-custom-profile-css-in-oldtwitter">Custom profile CSS in OldTwitter</a> — Sunday, 30th July, 2023</li>
-                <li><a href="/blog/?id=10-making-tetris-twitter-bot-with-node-js">Making Tetris in Twitter with Node.js</a> — Tuesday, 17th of August 2021</li>
-                <li><a href="/blog/?id=8-the-migration-2">The Migration 2</a> — Wednesday, 26th of August 2020</li>
-                <li><a href="/blog/?id=7-utix-website">The Utix website</a> — Sunday, 23th of February 2020</li>
-                <li><a href="/blog/?id=6-brainfuck-js">brainfuck.js</a> — Sunday, 12th of January 2020</li>
-                <li><a href="/blog/?id=5-the-migration">The Migration</a> — Friday, 16th of August 2019</li>
-                <li><a href="/blog/?id=4-the-puzzle-3-and-stuff">The Puzzle 3 and stuff</a> — Tuesday, 6th of August 2019</li>
-                <li><a href="/blog/?id=3-multiline-task-hello-world">Multi Line Task∞: Hello World</a> — Saturday, 25th of May 2019</li>
-                <li><a href="/blog/?id=2-chip8js-my-first-emulator">chip8js - my first emulator</a> — Sunday, 12th of May 2019</li>
-                <li><a href="/blog/?id=1-hello-world">Hello World!</a> — Friday, 10th of May 2019</li> -->
-            </ul>
-        </div>
-        
-        <div class="status-section">
-            <h2>ホテル</h2>
-            <p><strong>Systems status: OK</strong></p>
-            <div class="status-line"><span class="status-ok">[ OK ]</span> pandgeynet</div>
-            <div class="status-line"><span class="status-ok">[ OK ]</span> uwunet</div>
-            <div class="status-line"><span class="status-ok">[ OK ]</span> piserv</div>
-            <div class="status-line"><span class="status-ok">[ OK ]</span> solbot</div>
 
+        <div class="section">
+            <div class="section-title">// CURRENT PROJECTS</div>
+            <div class="prompt">pandgey@terminal:~$ <span class="command">ls -la projects/</span></div>
+            <div class="output">
+                <div class="project-item">this_website.html</div>
+                <div class="project-item">raspberry_pi_homelab/</div>
+                <div class="project-item">3d_modeling_experiments/</div>
+                <div class="project-item">linux_rice_configs/</div>
+                <div class="project-item">cyberpunk_aesthetic/</div>
+                <div class="project-item">music_production/</div>
+                <div class="project-item">homelab_chaos/</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">// SYSTEM STATUS</div>
+            <div class="prompt">pandgey@terminal:~$ <span class="command">systemctl status --all</span></div>
+            <div class="output">
+                <div class="status-line">
+                    <span>● website.service</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                    <span class="status-ok">[ACTIVE]</span>
+                </div>
+                <div class="status-line">
+                    <span>● uwunet.service</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+                    <span class="status-ok">[ACTIVE]</span>
+                </div>
+                <div class="status-line">
+                    <span>● piserv.service</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+                    <span class="status-warning">[DEGRADED]</span>
+                </div>
+                <div class="status-line">
+                    <span>● solbot.service</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
+                    <span class="status-ok">[ACTIVE]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">// SYSTEM INFORMATION</div>
+            <div class="prompt">pandgey@terminal:~$ <span class="command">uname -a && cat /etc/obsessions</span></div>
+            <div class="output">
+                Linux pandgey-station 6.1.0-arch1-1 #1 SMP PREEMPT_DYNAMIC<br>
+                Distro: Endeavour OS (Gnome + Hyprland), Pi OS (PIXEL), Windows 11<br><br>
+                Current Obsessions:<br>
+                ├─ 3D Modeling<br>
+                ├─ Linux Rice & Customization<br>
+                ├─ Cyberpunk Aesthetics<br>
+                ├─ Music Production<br>
+                └─ Homelab Experiments (it's fun to mess around)
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">// BLOG ENTRIES</div>
+            <div class="prompt">pandgey@terminal:~$ <span class="command">cat blog/latest.txt</span></div>
+            <div class="output">
+                cat: blog/latest.txt: No such file or directory<br>
+                <span style="color: #ffff00;">// Blog posts coming soon...</span><br>
+                <span style="color: #666;">// 5th 5th 5th</span><br>
+                <span style="color: #666;">// 5th 5th 5th</span>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="prompt">pandgey@terminal:~$ <span class="command">finger pandgey</span></div>
+                <div class="output">
+                    Login: pandgey &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: Cat Lady Supreme<br>
+                    Shell: /bin/bash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home: /home/pandgey<br>
+                    Tags: [Cat Lady] [Tech Enthusiast] [Artist] [Linux User]<br><br>
+                    <span style="color: #ffff00;">Quote of the day:</span><br>
+                    <span style="color: #00ccff; font-style: italic;">"Hiya there!!! &lt;:"</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">// CONTACT PROTOCOLS</div>
+                <div class="prompt">pandgey@terminal:~$ <span class="command">cat contacts.cfg</span></div>
+                <div class="output">
+                    email: <span class="link">pandgeyiscoottoday@gmail.com</span><br>
+                    social: <span class="link">Github</span> | <span class="link">Discord</span> | <span class="link">Addiction</span><br>
+                    status: <span class="status-ok blink">ONLINE</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; border-top: 1px solid #00ff00; padding-top: 15px;">
+            <div class="prompt">pandgey@terminal:~$ <span class="command">echo "© pandgey 2025. All Rights Reserved."</span></div>
+            <div class="output">© pandgey 2025. All Rights Reserved.</div>
+            <div class="output" style="color: #666; font-size: 0.8rem;">
+                [Connection will close in <span id="countdown">∞</span> seconds]
+            </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
