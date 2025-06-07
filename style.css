@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap');
         
+        :root {
+            --color1: #000;
+            --color2: #fff;
+            --color3: #ff00ff;
+            --color4: #00ffff;
+            --color5: #ffff00;
+            --color6: #00ff00;
+            --color-alpha: rgba(0, 0, 0, 0.8);
+            --color-alpha: rgba(255, 255, 255, 0.9);
+            --color-alpha95: rgba(255, 255, 255, 0.95);
+            --color-alpha: rgba(255, 255, 0, 0.3);
+        }
+
+
         * {
             margin: 0;
             padding: 0;
