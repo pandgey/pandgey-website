@@ -1,137 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pandgey@terminal:~$</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>★ WELCOME TO MY CYBER SPACE ★</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="matrix-bg" id="matrix"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch">★ CYBER SPACE ★</h1>
+            <div class="subtitle">>>> WELCOME TO MY DIGITAL REALM <<<</div>
+        </header>
 
-<!-- changes need to be made to ensure the website feels retro-futuristic -->
+        <nav class="nav-bar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-    <div class="terminal">
-        <div class="header">
-            <div class="ascii-art">
-██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███████╗██╗   ██╗
-██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝╚██╗ ██╔╝
-██████╔╝███████║██╔██╗ ██║██║  ██║██║  ███╗█████╗   ╚████╔╝ 
-██╔═══╝ ██╔══██║██║╚██╗██║██║  ██║██║   ██║██╔══╝    ╚██╔╝  
-██║     ██║  ██║██║ ╚████║██████╔╝╚██████╔╝███████╗   ██║   
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚══════╝   ╚═╝   
-            </div>
-            <div class="prompt">
-                pandgey@terminal:~$ <span class="command">whoami</span>
-            </div>
-            <div class="output">
-                > tech enthusiast, artist, linux user (I use arch btw)
-            </div>
-            <div class="output timestamp">
-                [SESSION STARTED: <span id="current-time"></span>]
+        <div class="marquee">
+            <div class="marquee-text">
+                ★ UNDER CONSTRUCTION ★ BEST VIEWED IN NETSCAPE ★ GEOCITIES FOREVER ★ WEB 1.0 RULES ★
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">// CURRENT PROJECTS</div>
-            <div class="prompt">pandgey@terminal:~$ <span class="command">ls -la projects/</span></div>
-            <div class="output">
-                <div class="project-item">this_website.html</div>
-                <div class="project-item">raspberry_pi_homelab/</div>
-                <div class="project-item">3d_modeling_experiments/</div>
-                <div class="project-item">linux_rice_configs/</div>
-                <div class="project-item">cyberpunk_aesthetic/</div>
-                <div class="project-item">music_production/</div>
-                <div class="project-item">homelab_chaos/</div>
-            </div>
+        <div class="visitor-counter">
+            VISITOR COUNT: 001337 | LAST UPDATED: 2025.06.07
         </div>
 
-        <div class="section">
-            <div class="section-title">// SYSTEM STATUS</div>
-            <div class="prompt">pandgey@terminal:~$ <span class="command">systemctl status --all</span></div>
-            <div class="output">
-                <div class="status-line">
-                    <span>● website.service</span>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
-                    <span class="status-ok">[ACTIVE]</span>
+        <div class="content-grid">
+            <main class="main-content">
+                <section id="blog">
+                    <div class="blog-post">
+                        <h2>🔥 LATEST TRANSMISSION 🔥</h2>
+                        <div class="date">DATE: 2025.06.07</div>
+                        <p>Welcome to my corner of the internet! This site is a throwback to the golden age of the web...</p>
+                        <p>Currently working on some sick new projects...</p>
+                        <a href="#" class="button">READ MORE</a>
+                    </div>
+
+                    <div class="blog-post">
+                        <h2>💾 DIGITAL ARCHAEOLOGY 💾</h2>
+                        <div class="date">DATE: 2025.06.05</div>
+                        <p>Been diving deep into the archives of the early web...</p>
+                        <a href="#" class="button">READ MORE</a>
+                    </div>
+                </section>
+
+                <section id="portfolio">
+                    <h2 class="portfolio-title">🎨 MY CREATIONS 🎨</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item"><h3>PROJECT NEON</h3><p>Experimental web art</p></div>
+                        <div class="portfolio-item"><h3>CYBER SHOP</h3><p>E-commerce site</p></div>
+                        <div class="portfolio-item"><h3>PIXEL PERFECT</h3><p>Design portfolio</p></div>
+                        <div class="portfolio-item"><h3>DATA DREAMS</h3><p>Interactive visualization</p></div>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>🎵 NOW PLAYING 🎵</h3>
+                    <p>Paramore - Emergency</p>
+                    <!-- <p>Crystal Method - Busy Child</p>
+                    <p>Fatboy Slim - Right Here Right Now</p> -->
                 </div>
-                <div class="status-line">
-                    <span>● uwunet.service</span>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
-                    <span class="status-ok">[ACTIVE]</span>
+
+                <div class="widget">
+                    <h3>💻 TECH SPECS 💻</h3>
+                    <p>OS: Endeavor OS</p><p>CPU: Intel Core i5-6200U</p><p>RAM: 8Gb</p>
+                    <p>GPU: Intel HD Graphics 520</p><p>WM: Hyprland</p>
                 </div>
-                <div class="status-line">
-                    <span>● piserv.service</span>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
-                    <span class="status-warning">[DEGRADED]</span>
+
+                <div class="widget">
+                    <h3>🔗 COOL LINKS 🔗</h3>
+                    <p><a href="#">Old School BBS</a></p>
+                    <p><a href="#">Retro Gaming Hub</a></p>
+                    <p><a href="#">ASCII Art Gallery</a></p>
+                    <p><a href="#">Web Design Museum</a></p>
                 </div>
-                <div class="status-line">
-                    <span>● solbot.service</span>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 92%;"></div></div>
-                    <span class="status-ok">[ACTIVE]</span>
+
+                <div class="widget">
+                    <h3>⚡ STATUS ⚡</h3>
+                    <p>Coding: ACTIVE</p><p>Mood: Calm...</p>
+                    <p>Caffeine Level: MAXIMUM</p><p>Inspiration: OVERFLOWING</p>
                 </div>
-            </div>
+            </aside>
         </div>
 
-        <div class="section">
-            <div class="section-title">// SYSTEM INFORMATION</div>
-            <div class="prompt">pandgey@terminal:~$ <span class="command">uname -a && cat /etc/obsessions</span></div>
-            <div class="output">
-                Linux pandgey-station 6.1.0-arch1-1 #1 SMP PREEMPT_DYNAMIC<br>
-                Distro: Endeavour OS (Gnome + Hyprland), Pi OS (PIXEL), Windows 11<br><br>
-                Current Obsessions:<br>
-                ├─ 3D Modeling<br>
-                ├─ Linux Rice & Customization<br>
-                ├─ Cyberpunk Aesthetics<br>
-                ├─ Music Production<br>
-                └─ Homelab Experiments (it's fun to mess around)
-            </div>
+        <div class="ascii-art">
+            ┌─┐┬ ┬┌┐ ┌─┐┬─┐  ┌─┐┌─┐┌─┐┌─┐┌─┐<br/>
+            │  └┬┘├┴┐├┤ ├┬┘  └─┐├─┘├─┤│  ├┤ <br/>
+            └─┘ ┴ └─┘└─┘┴└─  └─┘┴  ┴ ┴└─┘└─┘
         </div>
 
-        <div class="section">
-            <div class="section-title">// BLOG ENTRIES</div>
-            <div class="prompt">pandgey@terminal:~$ <span class="command">cat blog/latest.txt</span></div>
-            <div class="output">
-                cat: blog/latest.txt: No such file or directory<br>
-                <span style="color: #ffff00;">// Blog posts coming soon...</span><br>
-                <span style="color: #666;">// 5th 5th 5th</span><br>
-                <span style="color: #666;">// 5th 5th 5th</span>
-            </div>
+        <div class="guestbook">
+            <h3>📝 SIGN MY GUESTBOOK 📝</h3>
+            <div class="guestbook-entry"><strong>xX_CyberNinja_Xx:</strong> Sick site dude!</div>
+            <div class="guestbook-entry"><strong>RetroQueen2000:</strong> This brings back so many memories!</div>
+            <div class="guestbook-entry"><strong>DigitalDreamer:</strong> Finally, a website with SOUL!</div>
+            <a href="#" class="button">SIGN GUESTBOOK</a>
         </div>
 
-        <div class="sidebar">
-            <div class="user-info">
-                <div class="prompt">pandgey@terminal:~$ <span class="command">finger pandgey</span></div>
-                <div class="output">
-                    Login: pandgey &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: Cat Lady Supreme<br>
-                    Shell: /bin/bash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home: /home/pandgey<br>
-                    Tags: [Cat Lady] [Tech Enthusiast] [Artist] [Linux User]<br><br>
-                    <span style="color: #ffff00;">Quote of the day:</span><br>
-                    <span style="color: #00ccff; font-style: italic;">"Hiya there!!! &lt;:"</span>
-                </div>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">// CONTACT PROTOCOLS</div>
-                <div class="prompt">pandgey@terminal:~$ <span class="command">cat contacts.cfg</span></div>
-                <div class="output">
-                    email: <span class="link">pandgeyiscoottoday@gmail.com</span><br>
-                    social: <span class="link">Github</span> | <span class="link">Discord</span> | <span class="link">Addiction</span><br>
-                    status: <span class="status-ok blink">ONLINE</span>
-                </div>
-            </div>
+        <div class="webring">
+            <h3>🌐 WEBRING 🌐</h3>
+            <p><a href="#">← PREV</a> | <a href="#">RANDOM</a> | <a href="#">NEXT →</a></p>
+            <p>Part of the <strong>INDIE WEB REVIVAL</strong> webring</p>
         </div>
 
-        <div style="text-align: center; margin-top: 30px; border-top: 1px solid #00ff00; padding-top: 15px;">
-            <div class="prompt">pandgey@terminal:~$ <span class="command">echo "© pandgey 2025. All Rights Reserved."</span></div>
-            <div class="output">© pandgey 2025. All Rights Reserved.</div>
-            <div class="output" style="color: #666; font-size: 0.8rem;">
-                [Connection will close in <span id="countdown">∞</span> seconds]
+        <footer>
+            <p>© 2025 CYBER SPACE | HAND CODED WITH ❤️ IN HTML</p>
+            <p>BEST VIEWED AT 1024x768 | OPTIMIZED FOR DIAL-UP</p>
+            <div class="footer-links">
+                <a href="#">EMAIL ME</a>
+                <a href="#">RSS FEED</a>
+                <a href="#">SITEMAP</a>
+                <a href="#">PRIVACY</a>
             </div>
-        </div>
+            <p>This site is part of the indie web movement. No tracking, no ads, just pure creativity.</p>
+        </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
