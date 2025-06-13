@@ -147,4 +147,8 @@
                 margin-left: 10px;
                 color: #999999;
             }
+
+            .avatar {
+                margin: 0 auto;
+            }
         }
