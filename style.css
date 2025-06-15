@@ -110,11 +110,11 @@
         }
 
         .nav-links a:hover {
-            color: #0066cc;
+            color: #a800d6;
         }
 
         .nav-dotted-separator {
-            border-top: 1px dotted #ee00ff;
+            border-top: 1px dotted #7f0088;
             width: 20px;
             margin: 0 15px;
         }
@@ -126,7 +126,7 @@
         }
 
         .nav-brand:hover {
-            color: #0066cc;
+            color: #a800d6;
         }
 
         h1 {
@@ -142,13 +142,13 @@
         }
 
         a {
-            color: #0066cc;
+            color: #ae00f8;
             text-decoration: underline;
             transition: color 0.2s ease;
         }
 
         a:hover {
-            color: #004499;
+            color: #60008a;
         }
 
         .content {
