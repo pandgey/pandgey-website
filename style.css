@@ -5,7 +5,7 @@
         }
 
         body {
-            font-family: "Dangrek", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: "Pixelify Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background-color: #f8e8ff;
             color: #333333;
             line-height: 1.6;
@@ -14,6 +14,14 @@
             max-width: 800px;
             margin: 0 auto;
             position: relative;
+        }
+
+        
+        .pixelify-sans-<uniquifier> {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
         }
 
         /* Blurred background image */
