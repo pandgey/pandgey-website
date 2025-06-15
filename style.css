@@ -32,7 +32,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('valley.png');
+            background-image: url('neoTokyo.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -55,19 +55,19 @@
 
         /* Main content container with light brown background */
         .main-container {
-            background: rgba(210, 180, 140, 0.9);
+            background: rgba(200, 200, 200, 0.9);
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
-            border: 2px solid rgba(160, 130, 100, 0.3);
+            border: 2px solid rgba(40, 40, 40, 0.3);
         }
 
         /* Navigation Bar */
         nav {
             margin-bottom: 30px;
             padding-bottom: 20px;
-            border-bottom: 2px dotted #8B4513;
+            border-bottom: 2px dotted #7c7c7c;
         }
 
         .nav-container {
@@ -103,7 +103,7 @@
         }
 
         .nav-dotted-separator {
-            border-top: 1px dotted #8B4513;
+            border-top: 1px dotted #ee00ff;
             width: 20px;
             margin: 0 15px;
         }
