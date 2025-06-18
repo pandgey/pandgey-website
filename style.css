@@ -138,11 +138,43 @@ nav {
     color: #a800d6;
 }
 
+/* Avatar styling */
+.avatar-section {
+    margin: 20px 0;
+}
+
+.avatar {
+    float: left;
+    margin: 0 20px 20px 0;
+    text-align: center;
+}
+
+.avatar-image {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.stats {
+    font-style: italic;
+    color: #666;
+    margin-top: 8px;
+    font-size: 14px;
+    width: 150px;
+}
+
 h1 {
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 20px;
     color: #333;
+}
+
+/* Clear floats for headings after avatar section */
+h1:not(:first-of-type) {
+    clear: both;
+    margin-top: 30px;
 }
 
 p {
@@ -161,7 +193,7 @@ a:hover {
 }
 
 .content {
-    margin-bottom: 30px;
+    clear: both;
 }
 
 .updates {
@@ -182,51 +214,4 @@ a:hover {
 
 .update-text {
     margin-bottom: 0;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-        font-size: 15px;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .main-container {
-        padding: 20px;
-    }
-
-    .main-container:first-child {
-        width: 100%;
-    }
-    
-    h1 {
-        font-size: 22px;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .nav-dotted-separator {
-        display: none;
-    }
-
-    .nav-links li:not(:last-child)::after {
-        content: "·";
-        margin-left: 10px;
-        color: #8B4513;
-    }
-
-    .avatar {
-        margin: 0 auto;
-    }
 }
