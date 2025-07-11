@@ -7,7 +7,14 @@ body {
     text-align: center;
 }
 
+.barrio-regular {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .title {
+    font-family: "Barrio", system-ui;
     font-size: 68px;
     color: #D60270;
     font-style: italic;
