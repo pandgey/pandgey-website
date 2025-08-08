@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .barrio-regular {
@@ -21,6 +23,9 @@ body {
     margin-bottom: 40px;
     text-align: center;
     padding-left: 20px;
+    /* Make title responsive */
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .nav-menu {
@@ -28,6 +33,10 @@ body {
     justify-content: center;
     gap: 0;
     margin-bottom: 30px;
+    /* Keep the original button layout intact */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .nav-button {
@@ -39,6 +48,9 @@ body {
     font-weight: bold;
     font-size: 20px;
     display: inline-block;
+    /* Keep original button dimensions and prevent shrinking */
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .nav-button:hover {
@@ -52,6 +64,9 @@ body {
     margin: 20px auto;
     max-width: 600px;
     color: #ffffff;
+    /* Make sure content doesn't exceed screen width */
+    width: calc(100% - 40px);
+    box-sizing: border-box;
 }
 
 .content-title {
@@ -59,12 +74,14 @@ body {
     font-style: italic;
     color: #000000;
     margin-bottom: 20px;
+    word-wrap: break-word;
 }
 
 .main-text {
     font-size: 16px;
     line-height: 1.5;
     margin: 28px 0;
+    word-wrap: break-word;
 }
 
 .site-link {
@@ -83,8 +100,116 @@ body {
     font-size: 14px;
     display: inline-block;
     margin-top: 20px;
+    /* Ensure minimum tap target size */
+    min-height: 44px;
+    box-sizing: border-box;
 }
 
 .back-link:hover {
     background-color: #888888;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve button layout in fan listings and cool websites */
+.content-title a {
+    display: inline-block;
+    margin: 2px;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .title {
+        font-size: 48px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .nav-menu {
+        margin-bottom: 20px;
+        /* Keep original layout - allow horizontal scrolling if needed */
+        justify-content: flex-start;
+        padding: 0 10px;
+    }
+    
+    .main-content {
+        padding: 20px;
+        margin: 10px auto;
+        width: calc(100% - 20px);
+    }
+    
+    .content-title {
+        font-size: 24px;
+    }
+    
+    .main-text {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    /* Make main text responsive */
+    .main-text[style*="font-size: 25px"] {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .nav-menu {
+        /* Still keep horizontal layout, allow scrolling */
+        padding: 0 5px;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .content-title {
+        font-size: 20px;
+    }
+    
+    .main-text {
+        font-size: 16px;
+    }
+    
+    .main-text[style*="font-size: 25px"] {
+        font-size: 25px !important;
+    }
+}
+
+/* Improve touch targets for mobile - but keep original button sizes */
+@media (hover: none) and (pointer: coarse) {
+    .back-link,
+    .site-link,
+    .content-title a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Keep nav buttons at original size but add a bit more tap area */
+    .nav-button {
+        position: relative;
+    }
+    
+    .nav-button::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+    }
 }
