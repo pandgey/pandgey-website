@@ -17,7 +17,8 @@ body {
 .title {
     font-family: "Barrio", system-ui;
     font-size: 68px;
-    color: #D60270;
+    /* color: #D60270; */
+    color: #E26B0F;
     font-style: italic;
     margin-bottom: 40px;
     text-align: center;
@@ -37,9 +38,12 @@ body {
 }
 
 .nav-button {
-    background-color: #a0749d;
+    /* background-color: #a0749d;
     color: #000000;
-    border: 2px solid #0038A8;
+    border: 2px solid #0038A8; */
+    background-color: #59351C;
+    color: #F1A73A;
+    border: 2px solid #E26B0F;
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
@@ -50,12 +54,13 @@ body {
 }
 
 .nav-button:hover {
-    color: #0038A8;
+    /* color: #0038A8; */
+    color: #E26B0F;
 }
 
 .main-content {
-    background-color: #a0749d;
-    border: 3px solid #0038A8;
+    background-color: #59351C;
+    border: 3px solid #E26B0F;
     padding: 30px;
     margin: 20px auto;
     max-width: 600px;
