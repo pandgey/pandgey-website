@@ -72,7 +72,8 @@ body {
 .content-title {
     font-size: 28px;
     font-style: italic;
-    color: #000000;
+    /* color: #000000; */
+    color: #E26B0F;
     margin-bottom: 20px;
     word-wrap: break-word;
 }
