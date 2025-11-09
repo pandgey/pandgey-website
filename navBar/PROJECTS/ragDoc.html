@@ -18,24 +18,19 @@
     <div class="content">
 
       <p style="font-size: 25px;">never expect myself to build something like this. so here i go explain each parts of my rag</p>
-      <p style="font-size: 25px;">Content: Just a simple file to test run the algo.</p>
-      <p style="font-size: 25px;">QA Chain: Initializer to load the model and tokenizer. It prepares LangChain prompt template, create the chain (retriever -> formatter -> prompt -> model -> parser). It querying user question through the entire chain and return the generated answer. Could say the skeleton :P</p>
-      <p style="font-size: 25px;">Content: Just a simple file to test run the algo.</p>
-
-
-      <p style="font-size: 25px;">Things I did today:</p>
-      <ul>
-        <li style="font-size: 25px;">Set up the blog folder</li>
-        <li style="font-size: 25px;">Linked everything back to the main site</li>
-        <li style="font-size: 25px;">Tested responsiveness</li>
-      </ul>
+      <p style="font-size: 25px;">content: just a simple file to test run the algo.</p>
+      <p style="font-size: 25px;">qa chain: initializer to load the model and tokenizer. it prepares LangChain prompt template, create the chain (retriever -> formatter -> prompt -> model -> parser). it querying user question through the entire chain and return the generated answer. could say the skeleton :P</p>
+      <p style="font-size: 25px;">documentProcessor: data prep layer and it is the question-answering layer that uses the retriever built. this will pass on to qa chain question-answering layer.</p>
+      <p style="font-size: 25px;">vectorStore: temporary place to store data.</p>
+      <p style="font-size: 25px;">config: config to point out how the algorithm and where it supposed to go and process</p>
+      <p style="font-size: 25px;">main: name says it all, the main. welp it connects everything together, including config. lets just say its the everything above everything.</p>
 
       <p style="font-size: 25px;"></p>
     </div>
   </div>
 
   <div class="nav-menu">
-      <a href="../BLOG/blogHome.html" class="nav-button">RETURN</a>
+      <a href="../PROJECTS/projects.html" class="nav-button">RETURN</a>
   </div>
 
   <script src="../../script.js"></script>
