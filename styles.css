@@ -50,7 +50,7 @@ body {
 }
 
 .nav-button:hover {
-    color: #0038A8;
+    color: #9c1ea0;
 }
 
 .main-content {
@@ -67,7 +67,8 @@ body {
 .content-title {
     font-size: 28px;
     font-style: italic;
-    color: #000000;
+    /* color: #000000; */
+    color: #ffffff;
     margin-bottom: 20px;
     word-wrap: break-word;
 }

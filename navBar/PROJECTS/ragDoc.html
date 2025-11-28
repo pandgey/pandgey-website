@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BLOG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body>
+
+  <!-- Didnt expect that i will be creating this but here we go :3 -->
+
+  <div class="main-content">
+    <h1 style = "font-size: 30px"><b>rag documentation</b></h1>
+    <div class="content">
+
+      <p style="font-size: 25px;">never expect myself to build something like this. so here i go explain each parts of my rag</p>
+      <p style="font-size: 25px;">content: just a simple file to test run the algo.</p>
+      <p style="font-size: 25px;">qa chain: initializer to load the model and tokenizer. it prepares LangChain prompt template, create the chain (retriever -> formatter -> prompt -> model -> parser). it querying user question through the entire chain and return the generated answer. could say the skeleton :P</p>
+      <p style="font-size: 25px;">documentProcessor: data prep layer and it is the question-answering layer that uses the retriever built. this will pass on to qa chain question-answering layer.</p>
+      <p style="font-size: 25px;">vectorStore: temporary place to store data.</p>
+      <p style="font-size: 25px;">config: config to point out how the algorithm and where it supposed to go and process</p>
+      <p style="font-size: 25px;">main: name says it all, the main. welp it connects everything together, including config. lets just say its the everything above everything.</p>
+      <p style="font-size: 25px;">you know what? see it for yourself! try it! lmk what you think and i would truly appreciate if y'all keep contributing or starred or sth idk. here is the <a href=https://github.com/pandgey/Sol.git>here</a>!</p>
+
+      <p style="font-size: 25px;"></p>
+    </div>
+  </div>
+
+  <div class="nav-menu">
+      <a href="../PROJECTS/projects.html" class="nav-button">RETURN</a>
+  </div>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
