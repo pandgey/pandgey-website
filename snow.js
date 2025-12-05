@@ -1,4 +1,4 @@
-// <![CDATA[
+m// <![CDATA[
 var speed=33; // lower number for faster
 var flakes=100; // number of flakes
 var colour="#96c"; // colour of flakes
