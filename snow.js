@@ -130,4 +130,3 @@ function let_it_snow(c) {
   if (o>flakes*slush) for (i=0; i<slsh.length; i++) if (slsh[i]>3) slsh[i]--;
   if (z || o>flakes*slush) set_width();
 }
-// ]]>
