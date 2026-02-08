@@ -3,82 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>AXAYACATL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background image with glitch effect */
+        .bg-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+            filter: grayscale(100%) contrast(1.2);
+        }
+
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: glitch 3s infinite;
+        }
+
+        /* Noise overlay */
+        .noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.5;
+        }
+
+        /* Matrix-style numbers */
+        .matrix-text {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.3);
+            line-height: 1.4;
+            z-index: 0;
+            font-family: monospace;
+        }
+
+        /* Logo/symbol container */
+        .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .logo-symbol {
+            font-size: 120px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+            margin-bottom: 20px;
+        }
+
+        /* ASCII art style logo */
+        .ascii-logo {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 40px;
+            white-space: pre;
+            line-height: 1.2;
+        }
+
+        /* Navigation menu */
+        nav {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            text-align: center;
+        }
+
+        .nav-row {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #9B7EBD;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Times New Roman', serif;
+            transition: all 0.3s ease;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        nav a:hover {
+            color: #D4A5FF;
+            text-shadow: 0 0 10px rgba(155, 126, 189, 0.8);
+        }
+
+        /* Blood splatter effect */
+        .blood-splatter {
+            position: fixed;
+            bottom: 100px;
+            right: 200px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(139, 0, 0, 0.8) 0%, rgba(139, 0, 0, 0.4) 50%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(3px);
+            z-index: 0;
+        }
+
+        /* Glitch animation */
+        @keyframes glitch {
+            0%, 100% {
+                transform: translate(0);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                transform: translate(2px, 2px);
+            }
+            80% {
+                transform: translate(2px, -2px);
+            }
+        }
+
+        /* Scanlines */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.1) 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        /* Vignette effect */
+        .vignette {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+            z-index: 3;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Oooooooo so you are a stawker huh? Well, just don't do anything that breaks down my website please? :3 -->
-    <!-- Aaaannnnyyyywwaayyysss, enjoy viewing these codes! :3-->
-
-    <div class="title">PANDGEY'S SPACE</div>
-    
-    <div class="nav-menu">
-        <a href="#" class="nav-button">HOME</a>
-        <a href="./navBar/ABOUTME/aboutME.html" class="nav-button">ABOUT ME</a>
-        <a href="./navBar/PROJECTS/projects.html" class="nav-button">PROJECTS</a>
-        <a href="./navBar/ARTS/artshome.html" class="nav-button">ART</a>     <!-- gotta add more -->
-        <a href="./navBar/TAPES/tape.html" class="nav-button">TAPES</a>  <!-- gotta add more -->
-        <a href="./navBar/BLOG/blogHome.html" class="nav-button">BLOG</a>
+    <!-- Background -->
+    <div class="bg-container">
+        <div class="bg-image" style="background: linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a), 
+                                     linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a);
+                                     background-size: 10px 10px;
+                                     background-position: 0 0, 5px 5px;"></div>
     </div>
+
+    <!-- Noise overlay -->
+    <div class="noise"></div>
     
-    <div class="main-content">
-        <div class="content-title"><b>HI HAI HAI :3 !!!</b></div>
+    <!-- Scanlines -->
+    <div class="scanlines"></div>
+    
+    <!-- Vignette -->
+    <div class="vignette"></div>
 
-        <img src="./images/sol_chibi.png" alt="Image of myself" width="500" height="auto" />
-        
-        <div class="main-text" style = "font-size: 25px;">
-            Welcome to pandgey's space, a space that is filled with code (i think :/), arts, music(possibly) and cat!
-        </div>
-        
-        <div class="main-text" style = "font-size: 25px;">
-            Feel free to have a look around. Go on, try click those stuff on top! If not, i guess enjoy your stay here!
-        </div>
-
-        <div class="content-title">
-            <h3>Cool websites!</h3>
-            <a href="https://ridvenge.com/" target="_blank"><img src="https://files.catbox.moe/oawzpf.gif" alt="Ridvenge"></a>
-            <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif" alt = "Dimden"></a>
-            <a href="https://runegod.net/"><img src="https://runegod.net/MUSIC/UTAU/UTAUlittle.gif" alt="Runegod"></a>
-            <a href="https://mimikitty49.neocities.org/" target="_blank"><img src="./images/NEWbutton.gif" alt="mimikitty49"></a>
-            <a href="https://scythe.nekoweb.org" target="_blank"><img src="./images/scytheisizerbtn2.gif" style="height: 31px; width: 88px" title="Digital Scythesizing of My Mind ~ 了解！"/></a>
-            <a href="https://magooka.neocities.org/"> <img src="https://magooka.neocities.org/magookabutton.gif" style="height: 31px; width: 88px"</a>
-            <a href="https://cabbagesorter.neocities.org/" target="_blank"><img src="./images/yIwLOVm.gif" alt="CabbageSorter"></a>
-            <a href="https://fauux.neocities.org/" target="_blank"><img src="./images/fauux-btn-01.gif" alt="fauux"></a>
-            <a href="https://ne0nbandit.neocities.org/" target="_blank"><img src="https://ne0nbandit.github.io/assets/img/btn/mine/nbbanner.png"></a>
-            <a href="https://lilithdev.neocities.org/"><img src="https://lilithdev.neocities.org/buttons/lilithdevbtn.gif"></a>
-            <a href="https://menmy.neocities.org/"><img src="./images/ghostgirl_mine.gif"></a>
-            <a href="https://pontmercy.neocities.org"><img src="https://pontmercy.neocities.org/images/banner.gif"/></a>
-            <a href="https://andou.gay/impzone"><img src="./images/andou2.gif"/></a>
-            <a href="https://angelovin.neocities.org/" target="_blank"><img src="https://angelovin.neocities.org/img/angel.gif"></a>
-            <a href="https://freshflesh.neocities.org/"> <img src="https://freshflesh.neocities.org/img/button2.gif"></a>
-            <a href="https://dinpixels.neocities.org/#!"> <img src="./images/dinbtn0.gif"></a>
-            <a href="https://palmistshouse.net/"><img src="https://palmistshouse.net/buttonph.png" style="width:88px;height:31px;"></a>
-            <a target="_blank" href="https://lopster.neocities.org/"><img src="https://i.ibb.co/wN7hBJLT/run-away.gif" alt="lopster website button"></a>
-            <a href="https://velvetblue.neocities.org"><img src="https://files.catbox.moe/vltthb.png" alt="Velvet Blue"></a>
-            <a href="https://ezri.pet/"><img src="./images/ezri.png" alt="Ezri simple page >///<"></a>
-            <a target="_blank" href="https://thesoupsite.neocities.org/"><img src="./images/soupbutton.gif" width="88px" height="31px"></a>
-            <a href="https://ophanim.neocities.org/index.html"><img src="https://ophanim.neocities.org/image/angelz_button.gif"></a>
-        </div>
-
-        <div class="content-title">
-            <h3>Fan listings!</h3>
-            <a href="https://magneticdogz.neocities.org/fanlisting/helltaker/" target="_blank"><img src="./images/helltaker_fan.png" alt="Helltaker"></a>
-            <a href="https://fan.redcrown.net/fallout"><img src="./images/fallout-fanlisting.png" alt="Fallout series fanlisting"></a>
-            <a href="https://www.purifiedfiction.com/mychemicalromance/"><img src="./images/100x35-2.gif" alt="My chemical romance fanlisting"></a>
-            <a href="https://www.marheavenj.net/neverending/"><img src="./images/003.jpg" alt="Inori fanlisting"></a>
-            <a href="https://decembergirl.net/spidey/index.php"><img src="./images/1-02.jpg" alt="Spidey fanlisting!!! MY FAVOURITE"></a>
-            <a href="https://fl.after-rain.net/hifi/"><img src="./images/hifi88x31.png" alt="HiFi RUSH!!!!!"></a>
-        </div>
-
+    <!-- Matrix numbers on left -->
+    <div class="matrix-text">
+32449<br>
+421420821<br>
+9218682294<br>
+12802111499071<br>
+228082928411121<br>
+2882491134941141<br>
+489384411131117141<br>
+11128821111110821 92082<br>
+1182882111140941988286<br>
+482819111112828882826282894<br>
+1411014411111111 108894428891421<br>
+412041024111111120608111111042<br>
+419809111111284 111110111224<br>
+10490214011 411174119024<br>
+1282298886! 4111120824<br>
+281 14 441288 1<br>
+    68882!1<br>
     </div>
-    <script src="script.js"></script>
-    <script src="oneko.js" defer></script>
-    <script src="sparkle.js"></script>
-    <script src="snow.js" defer></script>
-    
+
+    <!-- Logo container -->
+    <div class="logo-container">
+        <div class="ascii-logo">..::::..
+.:::..::::::::::.
+:::"""::"" ::!
+:::! . .:!
+ ::::.. ::'
+   "::..:'
+    ':'
+    :::</div>
+        
+        <!-- Symbol (you can replace this with custom artwork) -->
+        <div class="logo-symbol">⟨⟨◊⟩⟩</div>
+    </div>
+
+    <!-- Blood splatter -->
+    <div class="blood-splatter"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-row">
+            <a href="#about">about</a>
+            <a href="#diary">d:arɏ</a>
+            <a href="#artwork">artwork</a>
+            <a href="#music">music</a>
+            <a href="#contact">contact</a>
+            <a href="#guestbook">guestboo_k</a>
+        </div>
+        <div class="nav-row">
+            <a href="#shop">shop</a>
+            <a href="#realms">r_ealms</a>
+            <a href="#poetry">poetry</a>
+            <a href="#extras">extras</a>
+        </div>
+    </nav>
+
 </body>
 </html>
