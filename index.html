@@ -78,9 +78,8 @@
             transform: translate(-50%, -50%);
             text-align: center;
             z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            transform: translate(-50%, -50%) translateY(80px);
+
         }
 
         .logo-symbol {
@@ -91,6 +90,22 @@
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
             margin-bottom: 20px;
+        }
+
+        /* Eyes container */
+        .eyes {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 600%);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .center-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
         }
 
         /* ASCII art style logo */
@@ -195,14 +210,6 @@
             pointer-events: none;
             z-index: 3;
         }
-
-        .center-image {
-            max-width: 300px;  /* Change this value - try 200px, 250px, 300px, etc */
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
-        }
     </style>
 </head>
 <body>
@@ -226,10 +233,13 @@
     <!-- Logo container -->
     <div class="logo-container">
 
-        <img src="images/eyes2.gif" alt="eyes" class="center-image">
-        
-        <!-- Symbol (you can replace this with custom artwork) -->
         <div class="logo-symbol">⟨⟨◊⟩⟩</div>
+
+    </div>
+
+    <!-- Eyes container (separate) -->
+    <div class="eyes">
+        <img src="images/eyes2.gif" alt="eyes" class="center-image">
     </div>
 
     <!-- Blood splatter -->
@@ -244,7 +254,7 @@
             <a href="#project">𝔭𝖗𝔬𝖏𝔢𝖈𝔱</a>
             <a href="#music">𝖙𝔞𝖕𝔢</a>
             <a href="#contact">𝔠𝖔𝔫𝖙𝔞𝖈𝔱</a>
-            <a href="#button">𝖇𝔲𝖙𝔱𝖔𝔫</a>
+            <a href="#button">𝖇𝔲𝖙𝔱𝔬𝔫</a>
         </div>
     </nav>
 
