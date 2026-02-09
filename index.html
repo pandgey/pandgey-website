@@ -78,6 +78,9 @@
             transform: translate(-50%, -50%);
             text-align: center;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .logo-symbol {
@@ -192,6 +195,14 @@
             pointer-events: none;
             z-index: 3;
         }
+
+        .center-image {
+            max-width: 300px;  /* Change this value - try 200px, 250px, 300px, etc */
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+        }
     </style>
 </head>
 <body>
@@ -214,14 +225,8 @@
 
     <!-- Logo container -->
     <div class="logo-container">
-        <div class="ascii-logo">..::::..
-.:::..::::::::::.
-:::"""::"" ::!
-:::! . .:!
- ::::.. ::'
-   "::..:'
-    ':'
-    :::</div>
+
+        <img src="images/eyes2.gif" alt="eyes" class="center-image">
         
         <!-- Symbol (you can replace this with custom artwork) -->
         <div class="logo-symbol">⟨⟨◊⟩⟩</div>
