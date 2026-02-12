@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>2D</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../styles.css" />
+  <meta charset="UTF-8">
+  <title>𝔞𝖗𝔱</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/bg/033C.jpg");
+      background-repeat: repeat;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+
+    body.page-i::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: url("../../images/bg/033C.jpg");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+
+    opacity: 0.25;   /* 👈 change this value */
+    z-index: -1;
+    }
+
+  </style>
+
+  <!-- your second stylesheet -->
+  <link rel="stylesheet" href="../../2ndstyle.css">
 </head>
+
 <body>
 
-  <!-- How did the barber win the race? He knew a short cut! Get it? Gahahahahhaha, sowwy >_< -->
-  
-  <div class="nav-menu">
-    <a href="../ARTS/artshome.html" class="nav-button">RETURN</a>
+  <body class="page-i"></body>
+
+  <div class="stack">
+
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <img src="../../images/arts/Ame_khs.PNG" alt="Ame" width="400" height="auto" />
+        <img src="../../images/arts/final2.PNG" alt="final2" width="400" height="auto" />
+        <img src="../../images/arts/sketch1.PNG" alt="sketch1" width="400" height="auto" />
+
+      </div>
+    </section>
+
+    <!-- Panel 2 -->
+    <section class="panel">
+
+        <div class="panel-content">
+          <img src="../../images/arts/final1.PNG" alt="final1" width="400" height="auto" />
+          <img src="../../images/arts/hm.PNG" alt="hm" width="400" height="auto" />
+          <img src="../../images/arts/sketch2.PNG" alt="sketch2" width="400" height="auto" />
+        </div>
+
+    </section>
+
   </div>
 
-  <div class="main-content">
-    <h1 style="font-size: 30px;">2D Arts</h1>
-    <div class="content">
-      <p style="font-size: 25px;">I welcome you to my 2D arts corner where i keep doodling and experiment and draw. enjoy! ps. dont criticize me harshly please >_<</p> 
-      
-        <img src="../../images/Ame_khs.PNG" alt="Ame" width="400" height="auto" />
-        <img src="../../images/final1.PNG" alt="final1" width="400" height="auto" />
-        <img src="../../images/final2.PNG" alt="final2" width="400" height="auto" />
-        <img src="../../images/sketch1.PNG" alt="sketch1" width="400" height="auto" />
-        <img src="../../images/sketch2.PNG" alt="sketch2" width="400" height="auto" />
-        <img src="../../images/hm.PNG" alt="hm" width="400" height="auto" />
+  <a class="return-btn" href="artshome.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
 
-    </div>
-  </div>
-
-  <script src="../../script.js"></script>
 </body>
+
 </html>
