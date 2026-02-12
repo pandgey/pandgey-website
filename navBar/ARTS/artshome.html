@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>𝔞𝖗𝔱</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/wings.jpg");
+      background-repeat: repeat;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+
+    body.page-i::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: url("../../images/wings.jpg");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+
+    opacity: 0.25;   /* 👈 change this value */
+    z-index: -1;
+    }
+
+  </style>
+
+  <!-- your second stylesheet -->
+  <link rel="stylesheet" href="../../2ndstyle.css">
 </head>
+
 <body>
 
-    <!-- What do you expect to find in here? -->
+  <body class="page-i"></body>
 
-    <div class="title">PANDGEY'S SPACE</div>
-    
-    <div class="nav-menu">
-        <a href="../../index.html" class="nav-button">HOME</a>
-        <a href="../ABOUTME/aboutME.html" class="nav-button">ABOUT ME</a>
-        <a href="../PROJECTS/projects.html" class="nav-button">PROJECTS</a>
-        <a href="../ARTS/artshome.html" class="nav-button">ART</a>     <!-- gotta add more -->
-        <a href="../TAPES/tape.html" class="nav-button">TAPES</a>  <!-- gotta add more -->
-        <a href="../BLOG/blogHome.html" class="nav-button">BLOG</a>
-    </div>
+  <div class="stack">
 
-    <div class="main-content">
-        <h1 style = "font-size: 30px"><b>My arts</b></h1>
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <div class="glitch-img" style="--img: url('/images/cat.png');"></div>
 
-        <p style="font-size: 25px">Arts. I LOVE ARTS. Art is how i express myself and give back to the world, this means my IDEAS, BELIEFS, and THOUGHTS. Personally, I just want to color OUR world by combining my ideas with others and create a new form of art. its just beautiful. have a look around!</p>
+        <p class="small-lines">བདེ་ལེགས</p>
+        <p class="small-lines">хаагдсан муурны булш</p>
+        <p class="small-lines">kubur kucing terbiar</p>
+        <p class="small-lines">@@@@@@@@</p>
+      </div>
+    </section>
 
-    </div>
+    <!-- Panel 2 -->
+    <section class="panel">
 
-    <div class="nav-menu">
-        <a href="2d.html" class="nav-button">☆___2D___☆</a>
-        <a href="3d.html" class="nav-button">✦____3D___✦</a>
-    </div>
+        <div class="panel-content">
+            <a href="2d.html" class="nav-button">☆___2D___☆</a>
+            <a href="3d.html" class="nav-button">✦____3D___✦</a>
+        </div>
 
-    <script src="../../script.js"></script>
-    <script src="modified_oneko.js" defer></script>
-    <script src="../../sparkle.js"></script>
+    </section>
+
+  </div>
+
+  <a class="return-btn" href="../../index.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
+
 </body>
+
 </html>
