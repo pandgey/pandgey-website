@@ -353,8 +353,8 @@ body::after {
 
 .return-btn{
   position: fixed;
-  left: 18px;
-  bottom: 18px;
+  left: 120px;
+  bottom: 100px;
   z-index: 10000;
 
   display: inline-block;
@@ -367,9 +367,9 @@ body::after {
   font-family: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 20px;
   line-height: 1;
+  border: 1px solid rgb(255, 111, 231);
+  box-shadow: 0 0 0 1px rgb(255, 124, 238);
 
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
 }
 
 /* keep it visually identical on hover/focus/active */
@@ -377,7 +377,7 @@ body::after {
 .return-btn:focus,
 .return-btn:active,
 .return-btn:visited{
-  color: #ff0033;
+  color: #00d9ff;
   background: #000;
   text-decoration: none;
   transform: none;
