@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&family=UnifrakturCook:wght@700&family=Courier+Prime:wght@400;700&display=swap');
 
 :root {
-    --bg: #050505;
+    --bg: #05050500;
     --panel-bg: #000;
     --outer-border: rgba(255, 255, 255, .35);
     --inner-border: rgba(255, 255, 255, .85);
@@ -349,4 +349,38 @@ body::after {
 
 .mt-14 {
     margin-top: 14px;
+}
+
+.return-btn{
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 10000;
+
+  display: inline-block;
+  padding: 8px 12px;
+
+  background: #000;
+  color: #ff0033;                 /* strong red */
+  text-decoration: none;
+
+  font-family: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 20px;
+  line-height: 1;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+/* keep it visually identical on hover/focus/active */
+.return-btn:hover,
+.return-btn:focus,
+.return-btn:active,
+.return-btn:visited{
+  color: #ff0033;
+  background: #000;
+  text-decoration: none;
+  transform: none;
+  animation: none;
+  filter: none;
 }

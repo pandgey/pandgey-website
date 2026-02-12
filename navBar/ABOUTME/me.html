@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>𝖎</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/bone.jpg");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+  </style>
 
   <!-- your second stylesheet -->
   <link rel="stylesheet" href="../../2ndstyle.css">
@@ -10,35 +25,42 @@
 
 <body>
 
-<div class="stack">
+  <body class="page-i"></body>
 
-  <!-- Panel 1 -->
-  <section class="panel">
-    <div class="panel-content">
-      <div class="glitch-img" style="--img: url('/images/cat.png');"></div>
+  <div class="stack">
 
-      <p class="small-lines">བདེ་ལེགས</p>
-      <p class="small-lines">хаагдсан муурны булш</p>
-      <p class="small-lines">kubur kucing terbiar</p>
-      <p class="small-lines">@@@@@@@@</p>
-    </div>
-  </section>
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <div class="glitch-img" style="--img: url('/images/cat.png');"></div>
 
-  <!-- Panel 2 -->
-  <section class="panel">
-    <div class="panel-content">
-      <h1 class="glitch-title" data-text="me">
-        me
-      </h1>
+        <p class="small-lines">བདེ་ལེགས</p>
+        <p class="small-lines">хаагдсан муурны булш</p>
+        <p class="small-lines">kubur kucing terbiar</p>
+        <p class="small-lines">@@@@@@@@</p>
+      </div>
+    </section>
 
-      <p class="small-lines">hi</p>
-      <p class="small-lines">some call me pandgey, others pang. welcome to my new web, a bit odd and unique i know</p>
-      <p class="small-lines">what is my hobby? i do lots of things, play music, build and play game, code for fun (weird, ik), and explore random stuff that interests me</p>
-      <p class="small-lines">i also love anything related fairytales, folklore, and mythology. its just fascinating</p>
-    </div>
-  </section>
+    <!-- Panel 2 -->
+    <section class="panel">
+      <div class="panel-content">
+        <h1 class="glitch-title" data-text="me">
+          me
+        </h1>
 
-</div>
+        <p class="small-lines">hi</p>
+        <p class="small-lines">some call me pandgey, others pang. welcome to my new web, a bit odd and unique i know</p>
+        <p class="small-lines">what is my hobby? i do lots of things, play music, build and play game, code for fun
+          (weird, ik), and explore random stuff that interests me</p>
+        <p class="small-lines">i also love anything related fairytales, folklore, and mythology. its just fascinating
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <a class="return-btn" href="../../index.html">return;</a>
 
 </body>
+
 </html>
