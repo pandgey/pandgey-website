@@ -14,8 +14,8 @@
     --text-dim: rgba(255, 255, 255, .65);
 
     /* glitch colors */
-    --r: rgba(255, 0, 81, 0.8);
-    --c: rgba(255, 0, 221, 0.8);
+    --r: #D60270;
+    --c: #0038A8;
 
     /* sizing */
     --panel-w: min(520px, 92vw);
@@ -263,7 +263,7 @@ body::after {
     font-size: clamp(56px, 8vw, 96px);
     line-height: 0.9;
     margin: 10px 0 18px;
-    color: rgba(255, 255, 255, .9);
+    color: #ffffff;
     position: relative;
     text-transform: none;
     /* faint outline feel */
@@ -361,7 +361,7 @@ body::after {
   padding: 8px 12px;
 
   background: #000;
-  color: #ff0033;                 /* strong red */
+  color: #ff0033;                 
   text-decoration: none;
 
   font-family: "Courier Prime", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
