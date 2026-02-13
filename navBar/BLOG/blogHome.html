@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>𝖇𝔩𝖔𝔤</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/bg/675.GIF");
+      background-repeat: repeat;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+
+    body.page-i::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: url("../../images/wings.jpg");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+
+    opacity: 0.25;   /* 👈 change this value */
+    z-index: -1;
+    }
+
+  </style>
+
+  <!-- your second stylesheet -->
+  <link rel="stylesheet" href="../../2ndstyle.css">
 </head>
+
 <body>
 
-  <!-- Just wonder what are you searhing for? Answers? Beliefs? -->
+  <body class="page-i"></body>
 
-  <div class="title">PANDGEY'S SPACE</div>
-    
-  <div class="nav-menu">
-      <a href="../../index.html" class="nav-button">HOME</a>
-      <a href="../ABOUTME/aboutME.html" class="nav-button">ABOUT ME</a>
-      <a href="../PROJECTS/projects.html" class="nav-button">PROJECTS</a>
-      <a href="../ARTS/artshome.html" class="nav-button">ART</a>     <!-- gotta add more -->
-      <a href="../TAPES/tape.html" class="nav-button">TAPES</a>  <!-- gotta add more -->
-      <a href="../BLOG/blogHome.html" class="nav-button">BLOG</a>
-  </div>
+  <div class="stack">
 
-  <div class="main-content">
-      <h1 style = "font-size: 30px"><b>My Blog Posts</b></h1>
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <img src="../../images/butterfly.gif" alt="eyes" class="center-image">
 
-      <p style="font-size: 25px">Here's where I dump my thoughts and updates on my life and what im up to! ignore my grammar and stuff, i think and talk to myself as im typing</p>
-      
-      <p style="font-size: 25px">---January---</p>
+        <p class="small-lines">peek into my life</p>
+        <p class="small-lines">i leave lots of marks</p>
+        <p class="small-lines">and thoughts</p>
+      </div>
+    </section>
+
+    <!-- Panel 2 -->
+    <section class="panel">
+      <div class="panel-content">
+        <h1 class="glitch-title" data-text="read">
+          blog
+        </h1>
+
+              <p style="font-size: 25px">---January---</p>
       <ul>
         <li style="font-size: 25px;"><a href="twelvth-post.html">[2026-01-02] New year! New beginnings! still lazy tho ._.</a></li>
 
@@ -77,9 +109,13 @@
         <li style="font-size: 25px;"><a href="second-post.html">[2025-06-17] Exam finished! And im just getting started</a></li>
         <li style="font-size: 25px;"><a href="first-post.html">[2025-06-01] My First Post – Setting this up!</a></li>
       </ul>
+      </div>
+    </section>
 
   </div>
 
-  <script src="../../script.js"></script>
+  <a class="return-btn" href="../../index.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
+
 </body>
+
 </html>

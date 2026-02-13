@@ -17,6 +17,27 @@
             font-family: 'Courier New', monospace;
             overflow-x: hidden;
             position: relative;
+
+            /* ADDITIONAL background image (top layer) */
+            background-image:
+                url("images/bg/278.GIF"),   /* your new image */
+                url("images/bg/278.GIF");          /* existing background */
+
+            background-repeat:
+                no-repeat,
+                repeat;
+
+            background-position:
+                center center,
+                top left;
+
+            background-size:
+                cover,      /* new image fills screen */
+                auto;       /* original tile stays normal */
+
+            background-attachment:
+                fixed,
+                fixed;
         }
 
         /* Background image with glitch effect */
