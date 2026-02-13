@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAPES</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>кассета</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/bg/064C.jpg");
+      background-repeat: repeat;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+
+    body.page-i::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background-image: url("../../images/wings.jpg");
+    background-repeat: repeat;
+    background-size: 256px 256px;
+
+    opacity: 0.25;   /* 👈 change this value */
+    z-index: -1;
+    }
+
+  </style>
+
+  <!-- your second stylesheet -->
+  <link rel="stylesheet" href="../../2ndstyle.css">
 </head>
+
 <body>
 
-    <!-- Why did the melody break up with the harmony? Because it needed space. it felt too chord-dependent AHAHAHAHHAHAHAHA! sorry, aaannyyywwaayyys <3 -->
+  <body class="page-i"></body>
 
-    <div class="title">PANDGEY'S SPACE</div>
+  <div class="stack">
 
-    <div class="nav-menu">
-        <a href="../../index.html" class="nav-button">HOME</a>
-        <a href="../ABOUTME/aboutME.html" class="nav-button">ABOUT ME</a>
-        <a href="../PROJECTS/projects.html" class="nav-button">PROJECTS</a>
-        <a href="../ARTS/artshome.html" class="nav-button">ART</a> <!-- gotta add more -->
-        <a href="../TAPES/tape.html" class="nav-button">TAPES</a> <!-- gotta add more -->
-        <a href="../BLOG/blogHome.html" class="nav-button">BLOG</a>
-    </div>
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <p class="small-lines">music</p>
+        <p class="small-lines">tape</p>
+        <p class="small-lines">sounds that give life</p>
+        <p class="small-lines">these are some that i owned</p>
+      </div>
+    </section>
 
-    <div class="main-content">
-        <h1 style = "font-size: 30px"><b>My tapes</b></h1>
+    <!-- Panel 2 -->
+    <section class="panel">
+      <div class="panel-content">
+        <h1 class="glitch-title" data-text="music">
+          tape
+        </h1>
 
-        <p style="font-size: 25px">I just started getting into this! Its actually really fun listening to a cassette tape, rather than just using digital version and just tap and play without knowing and FEEL the album. its pretty fun! these are some of the tapes that i have</p>
+        <p class="small-lines">Alex Macfarlane - Meanderings</p>
+        <p class="small-lines">Ronny Quasar - Wayah Trazwayah</p>
+        <p class="small-lines">Billy Idol - Idol Songs 11 of the best</p>
+        <p class="small-lines">Grógaldr - Disinterred Graves of Saints</p>
+        <p class="small-lines">Poppongene - Futures Unsure</p>
+        <p class="small-lines">Matt Harkin - The Door Knocker</p>
+      </div>
+    </section>
 
-        <ul>
-            <li style="font-size: 25px;">Alex Macfarlane - Meanderings</li>
-            <li style="font-size: 25px;">Ronny Quasar - Wayah Trazwayah</li>
-            <li style="font-size: 25px;">Billy Idol - Idol Songs 11 of the best</li>
-            <li style="font-size: 25px;">Grógaldr - Disinterred Graves of Saints</li>
-            <li style="font-size: 25px;">Poppongene - Futures Unsure</li>
-            <li style="font-size: 25px;">Matt Harkin - The Door Knocker</li>
-        </ul>
+  </div>
 
-        <p style="font-size: 25px">Currently looking for some game soundtrack tape and more rock tapes</p>
+  <a class="return-btn" href="../../index.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
 
-    </div>
-    <script src="../../script.js"></script>
-    <script src="modified_oneko.js" defer></script>
-    <script src="../../sparkle.js"></script>
 </body>
+
 </html>
