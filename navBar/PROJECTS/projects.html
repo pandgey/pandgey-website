@@ -1,57 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECTS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
+  <meta charset="UTF-8">
+  <title>𝖊𝔵𝖕𝔢𝖗𝔦𝖒𝔢𝖓𝔱</title>
+  <style>
+    body.page-i {
+      /* keep your base bg color but add a tiled image on top */
+      background-color: var(--bg);
+
+      /* your tile image (ONLY for this page) */
+      background-image: url("../../images/bg/pink001.jpg");
+      background-repeat: repeat;
+
+      /* optional: helps keep it steady while scrolling */
+      background-attachment: fixed;
+    }
+
+    body.page-i::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+
+      background-image: url("../../images/wings.jpg");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+
+      opacity: 0.25;
+      /* 👈 change this value */
+      z-index: -1;
+    }
+  </style>
+
+  <!-- your second stylesheet -->
+  <link rel="stylesheet" href="../../2ndstyle.css">
 </head>
 
 <body>
 
-    <!-- Projects, projects, and projects. Hey you! How are you doing? And what are you doing here? Stay cool and stay blessed! -->
+  <body class="page-i"></body>
 
-    <div class="title">PANDGEY'S SPACE</div>
+  <div class="stack">
 
-    <div class="nav-menu">
-        <a href="../../index.html" class="nav-button">HOME</a>
-        <a href="../ABOUTME/aboutME.html" class="nav-button">ABOUT ME</a>
-        <a href="../PROJECTS/projects.html" class="nav-button">PROJECTS</a>
-        <a href="../ARTS/artshome.html" class="nav-button">ART</a> <!-- gotta add more -->
-        <a href="../TAPES/tape.html" class="nav-button">TAPES</a> <!-- gotta add more -->
-        <a href="../BLOG/blogHome.html" class="nav-button">BLOG</a>
-    </div>
+    <!-- Panel 1 -->
+    <section class="panel">
+      <div class="panel-content">
+        <p class="small-lines">here</p>
+        <p class="small-lines">i create, experiment, contribute or deploy things that is useful to me and hopefully to others</p>
+        <p class="small-lines">i will do it, if its interesting and can solve problems</p>
+      </div>
+    </section>
 
-    <div class="main-content">
-        <h1 style = "font-size: 30px"><b>My projects</b></h1>
-
-        <p style="font-size: 25px">These are some projects that i do when im free or got inspired or want to solve a problem</p>
-
+    <!-- Panel 2 -->
+    <section class="panel">
+      <div class="panel-content">
+        <h1 class="glitch-title" data-text="create">
+          projects
+        </h1>
         <ul>
-            <li style="font-size: 25px;"><a href="ragDoc.html">Sols</a> - an upgrade of the original Sol, its an llm and soon to be my personal assistant! yes, i dunno why i need one but its pretty cool!</li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/cMusix>cMusix</a> - a terminal-based music player built in C, made with performance in mind</li>
-            <li style="font-size: 25px;">PortoScanner - An algorithm that scans a particular device on a network for open TCP and UDP ports (the code is not open to public, unless requested)</li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/Dicerator>Dicerator</a> - no dice? No problem! Use this dice roller and play your boardgame!</li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/Color-Picker>Color Picker</a> - a simple tool to assist user in
-                choosing their own color harmony for their needs</li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/IntrusionDetection4Server />Intrusion Detection for my server</a>(im
-                just gonna put it here, i know the risk and vulnerability but who want to get into my stuff anyway :P)
-            </li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/skunks />
-                TubeTutor - SmartStudy Chrome Extension</a> - some cool stuff i worked on during a hackathon, check it out! We tried to make a tool that allows user to study efficiently. Its almost completed! just almost
-            </li>
-            <li style="font-size: 25px;"><a href=https://github.com/pandgey/pandgeyDots />
-                pandgeyDots</a> - my personal dotfile for my tiling manager. you can copy and use it if you want, use at your own risk tho.
-            </li>
+            <li><a href="ragDoc.html">Sols</a> - an upgrade of the original Sol, its an llm and soon to be my personal assistant! yes, i dunno why i need one but its pretty cool!</li>
+            <li><a href=https://github.com/pandgey/cMusix>cMusix</a> - a terminal-based music player built in C, made with performance in mind</li>
+            <li>PortoScanner - An algorithm that scans a particular device on a network for open TCP and UDP ports (the code is not open to public, unless requested)</li>
+            <li><a href=https://github.com/pandgey/Dicerator>Dicerator</a> - no dice? No problem! Use this dice roller and play your boardgame!</li>
+            <li><a href=https://github.com/pandgey/Color-Picker>Color Picker</a> - a simple tool to assist user in choosing their own color harmony for their needs</li>
+            <li><a href=https://github.com/pandgey/IntrusionDetection4Server />Intrusion Detection for my server</a>(im just gonna put it here, i know the risk and vulnerability but who want to get into my stuff anyway :P)</li>
+            <li><a href=https://github.com/pandgey/skunks />TubeTutor - SmartStudy Chrome Extension</a> - some cool stuff i worked on during a hackathon, check it out! We tried to make a tool that allows user to study efficiently. Its almost completed! just almost</li>
+            <li><a href=https://github.com/pandgey/pandgeyDots />pandgeyDots</a> - my personal dotfile for my tiling manager. you can copy and use it if you want, use at your own risk tho.</li>
         </ul>
+      </div>
+    </section>
 
-    </div>
-    <script src="../../script.js"></script>
-    <script src="modified_oneko.js" defer></script>
-    <script src="../../sparkle.js"></script>
+  </div>
+
+  <a class="return-btn" href="../../index.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
+
 </body>
 
 </html>
