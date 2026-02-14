@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>𝖇𝔩𝖔𝔤</title>
+    <style>
+        body.page-i {
+            /* keep your base bg color but add a tiled image on top */
+            background-color: var(--bg);
+
+            /* your tile image (ONLY for this page) */
+            background-image: url("../../images/bg/675.GIF");
+            background-repeat: repeat;
+
+            /* optional: helps keep it steady while scrolling */
+            background-attachment: fixed;
+        }
+
+        body.page-i::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+
+            background-image: url("../../images/wings.jpg");
+            background-repeat: repeat;
+            background-size: 256px 256px;
+
+            opacity: 0.25;
+            /* 👈 change this value */
+            z-index: -1;
+        }
+    </style>
+
+    <!-- your second stylesheet -->
+    <link rel="stylesheet" href="../../2ndstyle.css">
+</head>
+
+<body>
+
+    <body class="page-i"></body>
+
+    <div class="stack">
+
+        <!-- Panel 1 -->
+        <section class="panel">
+            <div class="panel-content">
+                <p class="small-lines">15 February 2025</p>
+                <p class="small-lines">---*---*---</p>
+                <p class="small-lines">what a hectic holiday</p>
+                <p class="small-lines">---*---*---</p>
+                <p class="small-lines">as the title suggested, it has been nothing but a hectic holiday. first up, im building a game, enhancing student team project to make it ready for showcase, preparing a website for a student club (yk who you are), writing this web (its fun yes), and working on my personal project (why your interests always kill you slowly). i guess thats what curiosity do to a person.</p>
+                <p class="small-lines">so how is my life, its going pretty good. just need more rest and sleep thats for sure, could really use that before the start of semester like asap because i have been working on my side project like a lot. how is your game that you work on? its on pause because i have other stuff that takes way too much time and attention into it but i will get back to it.</p>
+                <p class="small-lines">wow, new web design? yea, it sure is. welcome to my new web design, i got inspired by a few little niche and weird things around me to the point that it messed my mind and i was like alright im gonna redesign my web to make it as unique as possible. and now people cannot view it on mobile no more, sadly. if you are reading this from a mobile devices, good luck and sorry.</p>
+                <p class="small-lines">im going to write this part to my future self because they deserve this: whoever you are, whatever you become, no matter your gender or sexual orientation or whatever, you are doing great. just keep pushing yourself, and remember to spread love not hate. thats what bad bunny said alright? take care now.</p>
+                <p class="small-lines">sorry, i have to write it out somewhere. its just a reminder yk and hopefully someone or me will read it and feel motivated. whatever you are doing, keep going and keep doing it! you are doing great! and keep spreading love! stay safe, stay hydrated, and make sure to get some rest too!</p>
+                <p class="small-lines">also i forgot to mention why i still keep my old blog in old style, i keep it there as a personal growth to see how far i have come and what i have done to so far. hope you understand</p>
+
+                <p class="small-lines">---*---*---</p>
+                <p class="small-lines">things i did today</p>
+                <p class="small-lines">---*---*---</p>
+                <p class="small-lines">write this blog</p>
+                <p class="small-lines">complete this whole website project</p>
+                <p class="small-lines">improve my mental well-being</p>
+
+            </div>
+        </section>
+
+    </div>
+
+    <a class="return-btn" href="blogHome.html">__𝖗𝔢𝖙𝔲𝖗𝔫__;</a>
+
+</body>
+
+</html>

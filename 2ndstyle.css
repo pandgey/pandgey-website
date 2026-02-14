@@ -151,33 +151,10 @@ body::after {
    ========================= */
 
 /* Use a DIV so we can duplicate it with ::before/::after */
-.glitch-img {
-    --img: url("");
-    width: min(300px, 70%);
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 18px;
-    background: var(--img) center / contain no-repeat;
-    filter: grayscale(1) contrast(1.2);
-    position: relative;
-}
-
-/* base “crt banding” */
-.glitch-img::before,
-.glitch-img::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--img) center / contain no-repeat;
-    opacity: .9;
-    mix-blend-mode: screen;
-}
-
-/* red channel */
-.glitch-img::before {
-    transform: translate(-1px, 0);
-    filter:
-        drop-shadow(-1px 0 var(--r)) contrast(1.15);
-    animation: imgGlitchA 2.6s steps(2) infinite;
+.normal-img {
+  width: min(300px, 70%);
+  display: block;
+  margin: 0 auto 18px;
 }
 
 /* cyan channel */
