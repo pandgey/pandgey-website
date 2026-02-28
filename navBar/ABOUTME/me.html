@@ -31,6 +31,12 @@
     z-index: -1;
     }
 
+    @media (max-width: 768px) {
+      body.page-i {
+        background-attachment: scroll;
+      }
+    }
+
   </style>
 
   <!-- your second stylesheet -->
@@ -46,7 +52,7 @@
     <!-- Panel 1 -->
     <section class="panel">
       <div class="panel-content">
-        <img src="../../images/Sol.png" class="normal-img">
+        <img src="../../images/Sol.png" class="normal-img" loading="lazy">
         <p class="small-lines">me!</p>
       </div>
     </section>

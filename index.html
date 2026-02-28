@@ -234,6 +234,38 @@
             pointer-events: none;
             z-index: 3;
         }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .going-somewhere {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            nav a {
+                font-size: 20px;
+            }
+
+            .logo-symbol {
+                font-size: 72px;
+            }
+
+            .center-image {
+                height: 100px;
+            }
+
+            nav {
+                bottom: 40px;
+            }
+
+            .matrix-text {
+                display: none;
+            }
+
+            .logo-container {
+                transform: translate(-50%, -50%) translateY(40px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -263,7 +295,7 @@
 
     <!-- Eyes container (separate) -->
     <div class="eyes">
-        <img src="images/eyes2.gif" alt="eyes" class="center-image">
+        <img src="images/eyes2.gif" alt="eyes" class="center-image" loading="lazy">
     </div>
 
     <!-- Blood splatter -->

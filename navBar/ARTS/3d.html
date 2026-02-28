@@ -31,6 +31,12 @@
     z-index: -1;
     }
 
+    @media (max-width: 768px) {
+      body.page-i {
+        background-attachment: scroll;
+      }
+    }
+
   </style>
 
   <!-- your second stylesheet -->
@@ -46,8 +52,8 @@
     <!-- Panel 1 -->
     <section class="panel">
       <div class="panel-content">
-        <img src="../../images/arts/the-abandoned-house-haunted-study.jpg" alt="house" width="400" height="auto" />
-        <img src="../../images/arts/the-lost-selenelion-sword.jpg" alt="sword" width="400" height="auto" />
+        <img src="../../images/arts/the-abandoned-house-haunted-study.jpg" alt="house" loading="lazy" style="max-width: 100%; width: 400px; height: auto;" />
+        <img src="../../images/arts/the-lost-selenelion-sword.jpg" alt="sword" loading="lazy" style="max-width: 100%; width: 400px; height: auto;" />
       </div>
     </section>
 
@@ -55,7 +61,7 @@
     <section class="panel">
 
         <div class="panel-content">
-          <img src="../../images/arts/the-frozen-valley.jpg" alt="fv" width="400" height="auto" />
+          <img src="../../images/arts/the-frozen-valley.jpg" alt="fv" loading="lazy" style="max-width: 100%; width: 400px; height: auto;" />
         </div>
 
     </section>

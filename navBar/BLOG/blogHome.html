@@ -31,6 +31,12 @@
       /* 👈 change this value */
       z-index: -1;
     }
+
+    @media (max-width: 768px) {
+      body.page-i {
+        background-attachment: scroll;
+      }
+    }
   </style>
 
   <!-- your second stylesheet -->
@@ -46,7 +52,7 @@
     <!-- Panel 1 -->
     <section class="panel">
       <div class="panel-content">
-        <img src="../../images/butterfly.gif" alt="eyes" class="center-image">
+        <img src="../../images/butterfly.gif" alt="eyes" class="center-image" loading="lazy">
 
         <p class="small-lines">peek into my life</p>
         <p class="small-lines">i leave lots of thoughts</p>

@@ -361,3 +361,24 @@ body::after {
   animation: none;
   filter: none;
 }
+
+/* Mobile fixes for subpages */
+@media (max-width: 600px) {
+    .return-btn {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    :root {
+        --panel-pad: 20px;
+        --inner-inset: 10px;
+    }
+
+    .stack {
+        gap: 20px;
+    }
+
+    .small-lines {
+        line-height: 1.5;
+    }
+}
