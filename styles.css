@@ -183,11 +183,7 @@ li {
     }
     
     .main-text[style*="font-size: 25px"] {
-        font-size: 18px !important;
-    }
-
-    .main-text[style*="font-size: 30px"] {
-        font-size: 22px !important;
+        font-size: 25px !important;
     }
 }
 
