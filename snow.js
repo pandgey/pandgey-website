@@ -80,7 +80,6 @@ function set_width() {
   }
   if (document.body.clientWidth) {
     if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
-    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
   }
   if (sw_min==999999 || sh_min==999999) {
     sw_min=800;
