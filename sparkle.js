@@ -1,5 +1,5 @@
 // <![CDATA[
-var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
+var sparkle_colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
 var sparkles=50;
 
 /****************************
@@ -25,18 +25,18 @@ var tinyv=new Array();
 window.onload=function() { if (document.getElementById) {
   var i, rats, rlef, rdow;
   for (var i=0; i<sparkles; i++) {
-    var rats=createDiv(3, 3);
+    var rats=sparkle_createDiv(3, 3);
     rats.style.visibility="hidden";
     rats.style.zIndex="999";
     document.body.appendChild(tiny[i]=rats);
     starv[i]=0;
     tinyv[i]=0;
-    var rats=createDiv(5, 5);
+    var rats=sparkle_createDiv(5, 5);
     rats.style.backgroundColor="transparent";
     rats.style.visibility="hidden";
     rats.style.zIndex="999";
-    var rlef=createDiv(1, 5);
-    var rdow=createDiv(5, 1);
+    var rlef=sparkle_createDiv(1, 5);
+    var rdow=sparkle_createDiv(5, 1);
     rats.appendChild(rlef);
     rats.appendChild(rdow);
     rlef.style.top="2px";
@@ -45,7 +45,7 @@ window.onload=function() { if (document.getElementById) {
     rdow.style.left="2px";
     document.body.appendChild(star[i]=rats);
   }
-  set_width();
+  sparkle_set_width();
   sparkle();
 }}
 
@@ -58,7 +58,7 @@ function sparkle() {
       star[c].style.left=(starx[c]=x)+"px";
       star[c].style.top=(stary[c]=y+1)+"px";
       star[c].style.clip="rect(0px, 5px, 5px, 0px)";
-      star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
+      star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(sparkle_colour=="random")?newColour():sparkle_colour;
       star[c].style.visibility="visible";
       starv[c]=50;
       break;
@@ -152,8 +152,8 @@ function set_scroll() {
   }
 }
 
-window.onresize=set_width;
-function set_width() {
+window.addEventListener("resize", sparkle_set_width);
+function sparkle_set_width() {
   var sw_min=999999;
   var sh_min=999999;
   if (document.documentElement && document.documentElement.clientWidth) {
@@ -176,7 +176,7 @@ function set_width() {
   shigh=sh_min;
 }
 
-function createDiv(height, width) {
+function sparkle_createDiv(height, width) {
   var div=document.createElement("div");
   div.style.position="absolute";
   div.style.height=height+"px";
@@ -186,10 +186,5 @@ function createDiv(height, width) {
 }
 
 function newColour() {
-  var c=new Array();
-  c[0]=255;
-  c[1]=Math.floor(Math.random()*256);
-  c[2]=Math.floor(Math.random()*(256-c[1]/2));
-  c.sort(function(){return (0.5 - Math.random());});
-  return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+  return "hsl("+Math.floor(Math.random()*360)+", 100%, 60%)";
 }
