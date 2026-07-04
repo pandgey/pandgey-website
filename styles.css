@@ -123,6 +123,33 @@ li {
     list-style-type: none; 
 }
 
+.page-layout {
+    display: flex;
+    flex-direction: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.page-layout .main-content {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebox h4 {
+    margin: 0 0 10px 0;
+    font-style: italic;
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding: 10px;
