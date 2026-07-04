@@ -127,7 +127,7 @@ li {
 
 .page-layout {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     align-items: flex-start;
     gap: 20px;
     max-width: 900px;
@@ -147,9 +147,30 @@ li {
     gap: 20px;
 }
 
+.sidebox {
+    background-color: #a0749d;
+    border: 3px solid #0038A8;
+    padding: 15px;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word;
+}
+
 .sidebox h4 {
     margin: 0 0 10px 0;
     font-style: italic;
+    font-size: 22px;
+}
+
+.sidebox p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sidebox img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
