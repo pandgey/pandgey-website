@@ -173,6 +173,11 @@ li {
     height: auto;
 }
 
+#contain_moon,
+#contain_moon * {
+    font-family: serif;
+}
+
 @media screen and (max-width: 768px) {
     body {
         padding: 10px;
