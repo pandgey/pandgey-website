@@ -19,7 +19,7 @@ body {
 .title {
     font-family: "Barrio", system-ui;
     font-size: 68px;
-    color: #D60270;
+    color: #E0578A;
     font-style: italic;
     margin-bottom: 40px;
     text-align: center;
@@ -40,9 +40,9 @@ body {
 }
 
 .nav-button {
-    background-color: #a0749d;
+    background-color: #F6B8D0;
     color: #000000;
-    border: 2px solid #0038A8;
+    border: 2px solid #303CBE;
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
@@ -54,16 +54,16 @@ body {
 }
 
 .nav-button:hover {
-    color: #9c1ea0;
+    color: #E0578A;
 }
 
 .main-content {
-    background-color: #a0749d;
-    border: 3px solid #0038A8;
+    background-color: #F6B8D0;
+    border: 3px solid #303CBE;
     padding: 30px;
     margin: 20px auto;
     max-width: 600px;
-    color: #ffffff;
+    color: #000000;
     width: calc(100% - 40px);
     box-sizing: border-box;
 }
@@ -71,8 +71,7 @@ body {
 .content-title {
     font-size: 28px;
     font-style: italic;
-    /* color: #000000; */
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 20px;
     word-wrap: break-word;
 }
@@ -84,16 +83,20 @@ body {
     word-wrap: break-word;
 }
 
+a {
+    color: #D60270;
+}
+
 .site-link {
-    color: #000000;
+    color: #D60270;
     font-style: italic;
     text-decoration: underline;
 }
 
 .back-link {
-    background-color: #a0749d;
+    background-color: #F6B8D0;
     color: #000000;
-    border: 2px solid #0038A8;
+    border: 2px solid #303CBE;
     padding: 8px 16px;
     text-decoration: none;
     font-weight: bold;
@@ -105,7 +108,7 @@ body {
 }
 
 .back-link:hover {
-    background-color: #888888;
+    background-color: #303CBE;
 }
 
 img {
@@ -150,10 +153,10 @@ li {
 }
 
 .sidebox {
-    background-color: #a0749d;
-    border: 3px solid #0038A8;
+    background-color: #F6B8D0;
+    border: 3px solid #303CBE;
     padding: 15px;
-    color: #ffffff;
+    color: #000000;
     box-sizing: border-box;
     text-align: center;
     word-wrap: break-word;
